@@ -1,5 +1,5 @@
 /media*
-/dxc
+/thirdparty/dxc
 /donut-*
 /build*
 .vs
