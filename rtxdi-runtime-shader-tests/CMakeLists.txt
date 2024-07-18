@@ -11,6 +11,7 @@ target_compile_definitions(${project} PRIVATE IS_CONSOLE_APP=1)
 
 target_link_libraries(${project} rtxdi-runtime cxxopts)
 set_target_properties(${project} PROPERTIES FOLDER ${folder})
+set_target_properties(${project} PROPERTIES LINKER_LANGUAGE CXX)
 
 # ResamplingCompileTest.hlsl for DXIL target
 
