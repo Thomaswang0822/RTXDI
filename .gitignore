@@ -2,6 +2,7 @@
 /thirdparty/dxc
 /donut-*
 /build*
+/out*
 .vs
 .vscode
 *.sublime-project

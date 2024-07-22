@@ -268,9 +268,9 @@ float3 tangentToWorld(RAB_Surface surface, float3 h)
     return bitangent * h.x + tangent * h.y + surface.normal * h.z;
 }
 
-RAB_RandomSamplerState RAB_InitRandomSampler(uint2 index, uint pass)
+RAB_RandomSamplerState RAB_InitRandomSampler(uint2 index, uint _pass)
 {
-    return initRandomSampler(index, g_Const.frameIndex + pass * 13);
+    return initRandomSampler(index, g_Const.frameIndex + _pass * 13);
 }
 
 float RAB_GetNextRandom(inout RAB_RandomSamplerState rng)
